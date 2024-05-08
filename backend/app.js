@@ -10,7 +10,7 @@ dotenv.config({ path: "./.env" });
 // const FRONTEND_URL = process.env.FRONTEND_URL;
 app.use(
   cors({
-    origin: ["https://food-hub-app-delta.vercel.app"],
+    origin: 'https://food-hub-app-delta.vercel.app',
     methods: ["POST"],
     credentials: true,
   })
