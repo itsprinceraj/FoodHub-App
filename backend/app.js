@@ -7,10 +7,10 @@ import { dbConnection } from "./database/dbConnection.js";
 
 const app = express();
 dotenv.config({ path: "./.env" });
-const FRONTEND_URL = process.env.FRONTEND_URL;
+// const FRONTEND_URL = process.env.FRONTEND_URL;
 app.use(
   cors({
-    origin: [FRONTEND_URL],
+    origin: ["https://food-hub-app-delta.vercel.app"],
     methods: ["POST"],
     credentials: true,
   })
