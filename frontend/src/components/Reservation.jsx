@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import axios from "axios";
 import toast from "react-hot-toast";
@@ -22,7 +22,7 @@ const Reservation = () => {
     }
     try {
       const { data } = await axios.post(
-        "https://food-hubapp.vercel.app/api/v1/reservation/send",
+        "http://localhost:4000/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
